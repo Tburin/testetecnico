@@ -16,7 +16,7 @@
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
                         <span>@lang('Alterar (Usuarios) - i9W3b')</span>
-                        <a href="{{ url('coronas') }}" class="btn-info btn-sm">
+                        <a href="{{ url('usuarios') }}" class="btn-info btn-sm">
                             <i class="fa fa-arrow-left"></i> @lang('Voltar')
                         </a>
                     </div>
@@ -28,7 +28,7 @@
                     </div>
                     @endif
 
-                    {!! Form::open(['action' => ['UsuarioController@update',$usuariotable->id], 'method' => 'PUT'])!!}
+                    {!! Form::open(['route' => ['usuarios.update',$usuariotable->id], 'method' => 'PUT'])!!}
 
                     <div class="form-group">
                         {!! Form::label(__('Nome:')) !!}

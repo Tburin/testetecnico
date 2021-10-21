@@ -53,7 +53,7 @@
                                     </a>
                                 </td>
                                 <td class="text-center p-0 align-middle" width="70">
-                                    <a href="{{ route('ususarios.edit', $usuario->id)}}"
+                                    <a href="{{ route('usuarios.edit', $usuario->id)}}"
                                         class="btn btn-primary btn-sm">@lang('Editar')
                                     </a>
                                 </td>

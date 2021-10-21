@@ -38,12 +38,13 @@ class UsuarioController extends Controller
     {
         $validatedData = $request->validate([
             'nome' => 'required|max:255',
-            'email' => 'required',
+            'email' => 'required|max:255',
             'datanascimento' => 'required|numeric',
             'telefone' => 'required|numeric',
         ]);
-        Usuario::create($validatedData);
+        $show = Usuario::create($validatedData);
         return redirect('/usuarios')->with('success', 'Dados do Usuario adicionado com sucesso!');
+
     }
 
     /**
@@ -81,7 +82,7 @@ class UsuarioController extends Controller
     {
         $validatedData = $request->validate([
             'nome' => 'required|max:255',
-            'email' => 'required',
+            'email' => 'required|max:255',
             'datanascimento' => 'required|numeric',
             'telefone' => 'required|numeric',
         ]);
@@ -102,3 +103,4 @@ class UsuarioController extends Controller
         return redirect('/usuarios')->with('success', 'Dados do Usuario removido com sucesso!');
     }
 }
+
