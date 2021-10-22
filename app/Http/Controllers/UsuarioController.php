@@ -38,7 +38,7 @@ class UsuarioController extends Controller
     {
         $validatedData = $request->validate([
             'nome' => 'required|max:255',
-            'email' => 'required|max:255',
+            'email' => 'required',
             'datanascimento' => 'required|numeric',
             'telefone' => 'required|numeric',
         ]);
@@ -82,7 +82,7 @@ class UsuarioController extends Controller
     {
         $validatedData = $request->validate([
             'nome' => 'required|max:255',
-            'email' => 'required|max:255',
+            'email' => 'required',
             'datanascimento' => 'required|numeric',
             'telefone' => 'required|numeric',
         ]);

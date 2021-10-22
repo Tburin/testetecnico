@@ -1,6 +1,6 @@
 @extends('usuarios.layout')
 
-@section('title',__($usuariotable->nome . ': Usuario - i9W3b'))
+@section('title',__($usuariotable->nome . ': Usuario '))
 
 @push('css')
 <style>
@@ -24,7 +24,7 @@ table th{
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
-                        <span><span class="text-info">{{$usuariotable->nome}}</span>: (@lang('Usuario')) - i9W3b</span>
+                        <span><span class="text-info">{{$usuariotable->nome}}</span>: (@lang('Usuario'))</span>
                         <a href="{{ url('usuarios') }}" class="btn-info btn-sm">
                             <i class="fa fa-arrow-left"></i> @lang('Voltar')
                         </a>

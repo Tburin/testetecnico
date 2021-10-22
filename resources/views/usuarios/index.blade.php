@@ -1,6 +1,6 @@
 @extends('usuarios.layout')
 
-@section('title',__('Usuarios (Dva) - i9W3b'))
+@section('title',__('Usuarios (Dva)'))
 
 @push('css')
 <style>
@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
-                        <span>@lang('Usuarios (Dva) i9W3b')</span>
+                        <span>@lang('Usuarios (Dva)')</span>
                         <a href="{{ url('usuarios/create') }}" class="btn-primary btn-sm">
                             <i class="fa fa-plus"></i> @lang('Criar Novo')
                         </a>

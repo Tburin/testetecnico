@@ -1,6 +1,6 @@
 @extends('usuarios.layout')
 
-@section('title',__('Alterar (Usuarios) - i9W3b'))
+@section('title',__('Alterar (Usuarios)'))
 
 @push('css')
 <style>
@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
-                        <span>@lang('Alterar (Usuarios) - i9W3b')</span>
+                        <span>@lang('Alterar (Usuarios)')</span>
                         <a href="{{ url('usuarios') }}" class="btn-info btn-sm">
                             <i class="fa fa-arrow-left"></i> @lang('Voltar')
                         </a>
@@ -37,7 +37,7 @@
 
                     <div class="form-group">
                         {!! Form::label(__('Email:')) !!}
-                        {!! Form::text("email", $usuariotable->email ,["id" => "email", "class"=>"form-control mmss","required"=>"required"]) !!}
+                        {!! Form::text("email", $usuariotable->email ,["id" => "email", "class"=>"email","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
